@@ -236,6 +236,72 @@ const counterObserver = new IntersectionObserver(
 const heroStats = document.querySelector(".hero-stats");
 if (heroStats) counterObserver.observe(heroStats);
 
+/* ---- CONTACT FORM — Formspree → llega a Gmail ---- */
+// PASO 1: Entrá a https://formspree.io y creá una cuenta gratis con tu Gmail
+// PASO 2: Creá un nuevo form y copiá el ID (ej: "xpwzgkla")
+// PASO 3: En el HTML buscá action="https://formspree.io/f/TU_FORM_ID" y reemplazá TU_FORM_ID
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const btn     = document.getElementById("btnSubmit");
+    const btnText = document.getElementById("btnText");
+    const loading = document.getElementById("btnLoading");
+    const status  = document.getElementById("formStatus");
+
+    const nombre  = document.getElementById("nombre").value.trim();
+    const email   = document.getElementById("email").value.trim();
+    const asunto  = document.getElementById("asunto").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
+
+    if (!nombre || !email || !asunto || !mensaje) {
+      status.className   = "form-status error";
+      status.textContent = "⚠️ Por favor completá todos los campos.";
+      return;
+    }
+
+    // Sincronizar replyto con el email ingresado
+    const replyto = document.getElementById("replyto");
+    if (replyto) replyto.value = email;
+
+    btn.disabled          = true;
+    btnText.style.display = "none";
+    loading.style.display = "inline";
+    status.className      = "form-status";
+    status.textContent    = "";
+
+    const formData = new FormData(contactForm);
+
+    try {
+      const res = await fetch(contactForm.action, {
+        method:  "POST",
+        body:    formData,
+        headers: { "Accept": "application/json" }
+      });
+
+      if (res.ok) {
+        status.className   = "form-status success";
+        status.textContent = "✅ ¡Mensaje enviado! Te respondo a la brevedad.";
+        contactForm.reset();
+      } else {
+        const data = await res.json();
+        throw new Error(data?.errors?.[0]?.message || "Error al enviar");
+      }
+    } catch (err) {
+      // Fallback: abre Gmail directamente
+      const body = `Nombre: ${nombre}\nEmail: ${email}\n\n${mensaje}`;
+      window.location.href = `mailto:benjaminrojas970@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(body)}`;
+      status.className   = "form-status success";
+      status.textContent = "📧 Abriendo Gmail con tu mensaje...";
+    } finally {
+      btn.disabled          = false;
+      btnText.style.display = "inline";
+      loading.style.display = "none";
+    }
+  });
+}
+
 /* ---- SCROLL REVEAL ---- */
 const revealObserver = new IntersectionObserver(
   (entries) => {
@@ -251,7 +317,7 @@ const revealObserver = new IntersectionObserver(
   { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
 );
 
-document.querySelectorAll("[data-reveal], .skill-card, .project-card, .contact-card, .goal-item").forEach(el => {
+document.querySelectorAll("[data-reveal], .skill-card, .project-card, .contact-card, .goal-item, .why-card, .contact-form-wrap, .github-profile, .service-card").forEach(el => {
   revealObserver.observe(el);
 });
 
