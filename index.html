@@ -25,6 +25,9 @@
 
 <body>
 
+  <!-- BARRA DE PROGRESO DE LECTURA -->
+  <div class="read-progress" id="readProgress"></div>
+
   <!-- LOADER -->
   <div class="loader" id="loader">
     <div class="loader-inner">
@@ -373,30 +376,47 @@
 
         <div class="timeline-item" data-reveal>
           <div class="timeline-dot"></div>
-          <div class="timeline-date">2025</div>
+          <div class="timeline-date">2020 — 2025</div>
           <div class="timeline-card">
-            <span class="timeline-badge">🎓 Educación</span>
-            <h3 class="timeline-title">Ingreso a la UPC</h3>
-            <p class="timeline-desc">Comienzo de la Tecnicatura Universitaria en Programación Full Stack en la Universidad Provincial de Córdoba. Primeros pasos en HTML, CSS y lógica de programación.</p>
+            <span class="timeline-badge">🏫 Secundario</span>
+            <h3 class="timeline-title">Escuela Experimental PROA — Cruz del Eje</h3>
+            <p class="timeline-desc">Bachiller en Informática con Orientación en Programación. Formación técnica intensiva en desarrollo web, programación orientada a objetos, bases de datos, control de versiones y buenas prácticas de desarrollo.</p>
             <div class="timeline-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">Lógica</span>
+              <span class="tag">HTML · CSS · JS</span>
+              <span class="tag">Python</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">VS Code</span>
             </div>
           </div>
         </div>
 
         <div class="timeline-item timeline-item--right" data-reveal>
           <div class="timeline-dot"></div>
-          <div class="timeline-date">2025</div>
+          <div class="timeline-date">2023 — 2024</div>
           <div class="timeline-card">
-            <span class="timeline-badge">💻 Proyecto</span>
-            <h3 class="timeline-title">Calculadora CUS</h3>
-            <p class="timeline-desc">Primer proyecto completo con JavaScript. Aplicación funcional para cálculo de indicadores nutricionales y deportivos con interfaz web.</p>
+            <span class="timeline-badge">💻 Proyectos Escolares</span>
+            <h3 class="timeline-title">Proyectos en Python, Django y Web</h3>
+            <p class="timeline-desc">Desarrollo de múltiples proyectos escolares: páginas web con HTML/CSS/JS, aplicaciones en Python para automatizar tareas, primer contacto con Django para web backend, prácticas con MySQL y gestión del Club de Tenis local.</p>
             <div class="timeline-tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Club de Tenis</span>
+            </div>
+            <div class="timeline-repos">
+              <a href="https://github.com/benjamin-Teo1/Django" target="_blank" class="repo-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 2A10 10 0 0 0 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21.5c0 .3.2.6.7.5A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
+                Django
+              </a>
+              <a href="https://github.com/benjamin-Teo1/Primer-proyecto-en-Django" target="_blank" class="repo-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 2A10 10 0 0 0 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21.5c0 .3.2.6.7.5A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
+                Primer Django
+              </a>
+              <a href="https://github.com/benjamin-Teo1/Club-de-tenis-1" target="_blank" class="repo-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 2A10 10 0 0 0 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21.5c0 .3.2.6.7.5A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
+                Club de Tenis
+              </a>
             </div>
           </div>
         </div>
@@ -405,13 +425,51 @@
           <div class="timeline-dot"></div>
           <div class="timeline-date">2025</div>
           <div class="timeline-card">
-            <span class="timeline-badge">🗄️ Base de Datos</span>
-            <h3 class="timeline-title">PostgreSQL & SQL</h3>
-            <p class="timeline-desc">Aprendizaje de bases de datos relacionales. Desarrollo del modelo UPC con diseño de esquemas, consultas avanzadas con JOIN y creación de vistas.</p>
+            <span class="timeline-badge">🏆 Proyecto Destacado</span>
+            <h3 class="timeline-title">Sistema de Gestión Comercial (POO)</h3>
+            <p class="timeline-desc">Uno de los proyectos más completos del secundario: Sistema de Gestión Comercial desarrollado en JavaScript con Programación Orientada a Objetos, basado en historias de usuario y diagramas UML.</p>
             <div class="timeline-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">POO</span>
+              <span class="tag">UML</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+            <div class="timeline-repos">
+              <a href="https://github.com/benjamin-Teo1/Sistema-Gesti-n-Comercial-POO" target="_blank" class="repo-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 2A10 10 0 0 0 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21.5c0 .3.2.6.7.5A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
+                Ver repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--right" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025</div>
+          <div class="timeline-card">
+            <span class="timeline-badge">🎓 Egreso</span>
+            <h3 class="timeline-title">Bachiller en Informática — PROA Cruz del Eje</h3>
+            <p class="timeline-desc">Egresado con título oficial de Bachiller en Informática con Orientación en Programación de la Escuela Experimental PROA de Cruz del Eje, Córdoba. 5 años de formación técnica intensiva en programación, desarrollo web, bases de datos y trabajo en equipo.</p>
+            <div class="timeline-tags">
+              <span class="tag">🏅 Título Oficial</span>
+              <span class="tag">Cruz del Eje</span>
+              <span class="tag">Córdoba</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2026</div>
+          <div class="timeline-card">
+            <span class="timeline-badge">🎓 Universidad</span>
+            <h3 class="timeline-title">Ingreso a la UPC — Programación Full Stack</h3>
+            <p class="timeline-desc">Inicio de la Tecnicatura Universitaria en Programación Full Stack en la Universidad Provincial de Córdoba. Profundización en HTML5, CSS3, JavaScript moderno y PostgreSQL, aplicando los conocimientos del secundario a un nivel universitario.</p>
+            <div class="timeline-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
               <span class="tag">PostgreSQL</span>
-              <span class="tag">SQL</span>
-              <span class="tag">Modelado ER</span>
             </div>
           </div>
         </div>
@@ -422,12 +480,18 @@
           <div class="timeline-card">
             <span class="timeline-badge">🌐 Portfolio</span>
             <h3 class="timeline-title">Portfolio Profesional</h3>
-            <p class="timeline-desc">Diseño y desarrollo de este portfolio personal. Publicado con GitHub Pages. Primer proyecto con animaciones avanzadas, diseño responsive y JavaScript moderno.</p>
+            <p class="timeline-desc">Diseño y desarrollo de este portfolio personal desde cero. Animaciones avanzadas, cubos 3D CSS, cursor personalizado, formulario de contacto funcional y diseño 100% responsive. Publicado con GitHub Pages.</p>
             <div class="timeline-tags">
               <span class="tag">HTML</span>
               <span class="tag">CSS</span>
               <span class="tag">JavaScript</span>
               <span class="tag">GitHub Pages</span>
+            </div>
+            <div class="timeline-repos">
+              <a href="https://github.com/benjamin-Teo1/Portafolio" target="_blank" class="repo-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 2A10 10 0 0 0 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21.5c0 .3.2.6.7.5A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
+                Ver repo
+              </a>
             </div>
           </div>
         </div>
@@ -438,7 +502,7 @@
           <div class="timeline-card timeline-card--future">
             <span class="timeline-badge">🚀 Próximo</span>
             <h3 class="timeline-title">React & Node.js</h3>
-            <p class="timeline-desc">Siguiente etapa: aprender React para frontend moderno y Node.js para backend. Objetivo: construir aplicaciones full stack completas e independientes.</p>
+            <p class="timeline-desc">Siguiente etapa: aprender React para frontend moderno y Node.js para backend. Objetivo: construir aplicaciones full stack completas y conseguir mi primera experiencia profesional en tecnología.</p>
             <div class="timeline-tags">
               <span class="tag">React</span>
               <span class="tag">Node.js</span>
@@ -674,7 +738,7 @@
         <!-- FORMULARIO con Formspree -->
         <div class="contact-form-wrap" data-reveal>
           <form id="contactForm" class="contact-form"
-                action="https://formspree.io/f/mrewzvbp"
+                action="https://formspree.io/f/TU_FORM_ID"
                 method="POST">
             <input type="hidden" name="_subject" value="Nuevo mensaje desde tu Portfolio 🚀">
             <input type="hidden" name="_replyto" id="replyto">
@@ -718,6 +782,11 @@
       <p class="footer-sub">Full Stack Developer in progress · Córdoba, Argentina</p>
     </div>
   </footer>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
   <script src="js/script.js"></script>
 </body>
