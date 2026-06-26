@@ -25,6 +25,9 @@
 
 <body>
 
+  <!-- BARRA DE PROGRESO DE LECTURA -->
+  <div class="read-progress" id="readProgress"></div>
+
   <!-- LOADER -->
   <div class="loader" id="loader">
     <div class="loader-inner">
@@ -202,75 +205,170 @@
   </section>
 
   <!-- HABILIDADES -->
-  <section id="habilidades" class="section section-alt">
-    <div class="section-container">
-      <div class="section-header">
-        <span class="section-tag">02 — Habilidades</span>
-        <h2 class="section-title">Stack tecnológico</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card" data-reveal>
-          <div class="skill-icon">
-            <svg viewBox="0 0 32 32" fill="none"><path d="M2 4h28l-2.5 20L16 28 4.5 24 2 4z" fill="#E44D26"/><path d="M16 6v20.5l9.5-2.5L27.5 6H16z" fill="#F16529"/><path d="M16 13h-4.5l-.3-3.5H16V6H8l.8 9H16v-2zm0 7l-3.8-1-.3-3H9.5l.6 6L16 25v-5z" fill="#fff"/><path d="M16 13v2h4.2l-.4 4-3.8 1v5l6.5-1.5.6-6H16z" fill="#fff" opacity=".9"/></svg>
-          </div>
-          <h3 class="skill-name">HTML5</h3>
-          <p class="skill-desc">Semántica, accesibilidad, estructura profesional.</p>
-          <div class="skill-bar"><div class="skill-fill" style="--pct: 90%"></div></div>
-          <span class="skill-pct">90%</span>
-        </div>
+<section id="habilidades" class="section section-alt">
+  <div class="section-container">
 
-        <div class="skill-card" data-reveal>
-          <div class="skill-icon">
-            <svg viewBox="0 0 32 32" fill="none"><path d="M2 4h28l-2.5 20L16 28 4.5 24 2 4z" fill="#264DE4"/><path d="M16 6v20.5l9.5-2.5L27.5 6H16z" fill="#2965F1"/><path d="M9 13h7v-3H5.5l.8 9H16v-3H9.3L9 13zm.5 5H6l.6 5.5L16 26v-3l-4.5-1.2-.5-4.8z" fill="#fff"/><path d="M16 10v3h6.5l-.5 4.5H16v3h5.7l-.6 4.5L16 26v3l6.5-1.8.5-2 1-10.5.3-2H16z" fill="#ebebeb"/></svg>
-          </div>
-          <h3 class="skill-name">CSS3</h3>
-          <p class="skill-desc">Flexbox, Grid, animaciones, diseño responsive.</p>
-          <div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div>
-          <span class="skill-pct">85%</span>
-        </div>
-
-        <div class="skill-card" data-reveal>
-          <div class="skill-icon">
-            <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#F0DB4F"/><path d="M22 22.5c.5 1 1.2 1.7 2.4 1.7 1 0 1.6-.5 1.6-1.2 0-.8-.6-1.1-1.7-1.6l-.6-.2c-1.7-.7-2.8-1.6-2.8-3.5 0-1.7 1.3-3 3.4-3 1.5 0 2.5.5 3.3 1.8l-1.8 1.2c-.4-.7-.8-1-1.5-1-.7 0-1.1.4-1.1 1 0 .7.4 1 1.5 1.4l.6.3c2 .8 3.1 1.8 3.1 3.7 0 2.1-1.7 3.2-3.9 3.2-2.2 0-3.6-1-4.3-2.4l1.8-1zm-8.5.2c.4.7.7 1.3 1.5 1.3.8 0 1.2-.3 1.2-1.5V15h2.3v7.6c0 2.5-1.5 3.6-3.6 3.6-1.9 0-3-1-3.6-2.2l2.2-1.3z" fill="#323330"/></svg>
-          </div>
-          <h3 class="skill-name">JavaScript</h3>
-          <p class="skill-desc">DOM, eventos, fetch API, lógica de negocio.</p>
-          <div class="skill-bar"><div class="skill-fill" style="--pct: 60%"></div></div>
-          <span class="skill-pct">60%</span>
-        </div>
-
-        <div class="skill-card" data-reveal>
-          <div class="skill-icon">
-            <svg viewBox="0 0 32 32" fill="none"><path d="M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14 14-6.3 14-14S23.7 2 16 2z" fill="#336791"/><path d="M21 9.4c-1-.4-2.2-.7-3.4-.7-3.5 0-6 2-6 4.7 0 2 1.4 3.3 3.7 4l1 .3c1.3.4 2 .9 2 1.7 0 1-.9 1.6-2.5 1.6-1.5 0-2.8-.5-3.7-1l-.7 2c1 .6 2.6 1 4.4 1 4 0 6.3-1.8 6.3-4.8 0-2.1-1.4-3.4-4-4.2l-1-.3c-1.1-.4-1.8-.8-1.8-1.6 0-.9.8-1.5 2.1-1.5 1.2 0 2.3.4 3 .8l.6-2z" fill="#fff"/></svg>
-          </div>
-          <h3 class="skill-name">PostgreSQL</h3>
-          <p class="skill-desc">Modelado relacional, JOINs, vistas, consultas SQL.</p>
-          <div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div>
-          <span class="skill-pct">80%</span>
-        </div>
-
-        <div class="skill-card" data-reveal>
-          <div class="skill-icon">
-            <svg viewBox="0 0 32 32" fill="none"><path d="M16 2l-.4.8L3.4 27.5h25.2L16 2z" fill="#F05032"/><path d="M16 7l9.5 19H6.5L16 7z" fill="#F05032" opacity=".5"/><path d="M14 21v-6h4v6h-4zm0-8V11h4v2h-4z" fill="#fff"/></svg>
-          </div>
-          <h3 class="skill-name">Git & GitHub</h3>
-          <p class="skill-desc">Control de versiones, ramas, pull requests, GitHub Pages.</p>
-          <div class="skill-bar"><div class="skill-fill" style="--pct: 70%"></div></div>
-          <span class="skill-pct">70%</span>
-        </div>
-
-        <div class="skill-card skill-card--soon" data-reveal>
-          <div class="skill-icon skill-icon--dim">
-            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#61DAFB" opacity=".3"/><circle cx="16" cy="16" r="2.5" fill="#61DAFB"/></svg>
-          </div>
-          <h3 class="skill-name">React</h3>
-          <p class="skill-desc">Próximamente — actualmente aprendiendo.</p>
-          <div class="skill-bar"><div class="skill-fill skill-fill--soon" style="--pct: 15%"></div></div>
-          <span class="skill-pct skill-pct--dim">Aprendiendo</span>
-        </div>
-      </div>
+    <div class="section-header">
+      <span class="section-tag">02 — Habilidades</span>
+      <h2 class="section-title">Stack tecnológico</h2>
     </div>
-  </section>
+
+    <div class="skills-grid">
+
+      <!-- HTML -->
+      <div class="skill-card" data-reveal>
+        <img src="https://skillicons.dev/icons?i=html" alt="HTML" />
+        <h3 class="skill-name">HTML5</h3>
+        <p class="skill-desc">
+          Semántica, accesibilidad y estructura profesional.
+        </p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--pct: 90%"></div>
+        </div>
+        <span class="skill-pct">90%</span>
+      </div>
+
+      <!-- CSS -->
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">
+          <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
+        </div>
+        <h3 class="skill-name">CSS3</h3>
+        <p class="skill-desc">
+          Flexbox, Grid, animaciones y diseño responsive.
+        </p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--pct: 85%"></div>
+        </div>
+        <span class="skill-pct">85%</span>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">
+          <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" />
+        </div>
+        <h3 class="skill-name">JavaScript</h3>
+        <p class="skill-desc">
+          DOM, eventos, APIs y lógica de programación.
+        </p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--pct: 60%"></div>
+        </div>
+        <span class="skill-pct">60%</span>
+      </div>
+
+      <!-- PostgreSQL -->
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">
+          <img src="https://skillicons.dev/icons?i=postgresql" alt="PostgreSQL" />
+        </div>
+        <h3 class="skill-name">PostgreSQL</h3>
+        <p class="skill-desc">
+          Modelado relacional, JOINs, vistas y consultas SQL.
+        </p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--pct: 80%"></div>
+        </div>
+        <span class="skill-pct">80%</span>
+      </div>
+
+      <!-- MySQL -->
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">
+          <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" />
+        </div>
+        <h3 class="skill-name">MySQL</h3>
+        <p class="skill-desc">
+          Diseño de bases de datos, consultas y administración de datos.
+        </p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--pct: 75%"></div>
+        </div>
+        <span class="skill-pct">75%</span>
+      </div>
+
+      <!-- Python -->
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">
+          <img src="https://skillicons.dev/icons?i=python" alt="Python" />
+        </div>
+        <h3 class="skill-name">Python</h3>
+        <p class="skill-desc">
+          Algoritmos, estructuras de control y resolución de problemas.
+        </p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--pct: 65%"></div>
+        </div>
+        <span class="skill-pct">65%</span>
+      </div>
+
+      <!-- Java -->
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">
+          <img src="https://skillicons.dev/icons?i=java" alt="Java" />
+        </div>
+        <h3 class="skill-name">Java</h3>
+        <p class="skill-desc">
+          Programación orientada a objetos y desarrollo de aplicaciones.
+        </p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--pct: 50%"></div>
+        </div>
+        <span class="skill-pct">50%</span>
+      </div>
+
+      <!-- Git & GitHub -->
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon" style="display:flex;align-items:center;gap:.5rem;justify-content:center;">
+          <img src="https://skillicons.dev/icons?i=git" alt="Git" />
+          <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
+        </div>
+        <h3 class="skill-name">Git & GitHub</h3>
+        <p class="skill-desc">
+          Control de versiones, ramas, repositorios y GitHub Pages.
+        </p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--pct: 75%"></div>
+        </div>
+        <span class="skill-pct">75%</span>
+      </div>
+
+      <!-- VS CODE -->
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">
+          <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" />
+        </div>
+        <h3 class="skill-name">Visual Studio Code</h3>
+        <p class="skill-desc">
+          Entorno principal para desarrollo web y proyectos Full Stack.
+        </p>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--pct: 90%"></div>
+        </div>
+        <span class="skill-pct">90%</span>
+      </div>
+
+      <!-- REACT -->
+      <div class="skill-card skill-card--soon" data-reveal>
+        <div class="skill-icon skill-icon--dim">
+          <img src="https://skillicons.dev/icons?i=react" alt="React" />
+        </div>
+        <h3 class="skill-name">React</h3>
+        <p class="skill-desc">
+          Próximamente — actualmente aprendiendo.
+        </p>
+        <div class="skill-bar">
+          <div class="skill-fill skill-fill--soon" style="--pct: 15%"></div>
+        </div>
+        <span class="skill-pct skill-pct--dim">
+          Aprendiendo
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- PROYECTOS -->
   <section id="proyectos" class="section">
@@ -373,30 +471,47 @@
 
         <div class="timeline-item" data-reveal>
           <div class="timeline-dot"></div>
-          <div class="timeline-date">2025</div>
+          <div class="timeline-date">2020 — 2025</div>
           <div class="timeline-card">
-            <span class="timeline-badge">🎓 Educación</span>
-            <h3 class="timeline-title">Ingreso a la UPC</h3>
-            <p class="timeline-desc">Comienzo de la Tecnicatura Universitaria en Programación Full Stack en la Universidad Provincial de Córdoba. Primeros pasos en HTML, CSS y lógica de programación.</p>
+            <span class="timeline-badge">🏫 Secundario</span>
+            <h3 class="timeline-title">Escuela Experimental PROA — Cruz del Eje</h3>
+            <p class="timeline-desc">Bachiller en Informática con Orientación en Programación. Formación técnica intensiva en desarrollo web, programación orientada a objetos, bases de datos, control de versiones y buenas prácticas de desarrollo.</p>
             <div class="timeline-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">Lógica</span>
+              <span class="tag">HTML · CSS · JS</span>
+              <span class="tag">Python</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">VS Code</span>
             </div>
           </div>
         </div>
 
         <div class="timeline-item timeline-item--right" data-reveal>
           <div class="timeline-dot"></div>
-          <div class="timeline-date">2025</div>
+          <div class="timeline-date">2023 — 2024</div>
           <div class="timeline-card">
-            <span class="timeline-badge">💻 Proyecto</span>
-            <h3 class="timeline-title">Calculadora CUS</h3>
-            <p class="timeline-desc">Primer proyecto completo con JavaScript. Aplicación funcional para cálculo de indicadores nutricionales y deportivos con interfaz web.</p>
+            <span class="timeline-badge">💻 Proyectos Escolares</span>
+            <h3 class="timeline-title">Proyectos en Python, Django y Web</h3>
+            <p class="timeline-desc">Desarrollo de múltiples proyectos escolares: páginas web con HTML/CSS/JS, aplicaciones en Python para automatizar tareas, primer contacto con Django para web backend, prácticas con MySQL y gestión del Club de Tenis local.</p>
             <div class="timeline-tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Club de Tenis</span>
+            </div>
+            <div class="timeline-repos">
+              <a href="https://github.com/benjamin-Teo1/Django" target="_blank" class="repo-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 2A10 10 0 0 0 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21.5c0 .3.2.6.7.5A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
+                Django
+              </a>
+              <a href="https://github.com/benjamin-Teo1/Primer-proyecto-en-Django" target="_blank" class="repo-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 2A10 10 0 0 0 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21.5c0 .3.2.6.7.5A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
+                Primer Django
+              </a>
+              <a href="https://github.com/benjamin-Teo1/Club-de-tenis-1" target="_blank" class="repo-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 2A10 10 0 0 0 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21.5c0 .3.2.6.7.5A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
+                Club de Tenis
+              </a>
             </div>
           </div>
         </div>
@@ -405,13 +520,51 @@
           <div class="timeline-dot"></div>
           <div class="timeline-date">2025</div>
           <div class="timeline-card">
-            <span class="timeline-badge">🗄️ Base de Datos</span>
-            <h3 class="timeline-title">PostgreSQL & SQL</h3>
-            <p class="timeline-desc">Aprendizaje de bases de datos relacionales. Desarrollo del modelo UPC con diseño de esquemas, consultas avanzadas con JOIN y creación de vistas.</p>
+            <span class="timeline-badge">🏆 Proyecto Destacado</span>
+            <h3 class="timeline-title">Sistema de Gestión Comercial (POO)</h3>
+            <p class="timeline-desc">Uno de los proyectos más completos del secundario: Sistema de Gestión Comercial desarrollado en JavaScript con Programación Orientada a Objetos, basado en historias de usuario y diagramas UML.</p>
             <div class="timeline-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">POO</span>
+              <span class="tag">UML</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+            <div class="timeline-repos">
+              <a href="https://github.com/benjamin-Teo1/Sistema-Gesti-n-Comercial-POO" target="_blank" class="repo-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 2A10 10 0 0 0 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21.5c0 .3.2.6.7.5A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
+                Ver repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--right" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025</div>
+          <div class="timeline-card">
+            <span class="timeline-badge">🎓 Egreso</span>
+            <h3 class="timeline-title">Bachiller en Informática — PROA Cruz del Eje</h3>
+            <p class="timeline-desc">Egresado con título oficial de Bachiller en Informática con Orientación en Programación de la Escuela Experimental PROA de Cruz del Eje, Córdoba. 5 años de formación técnica intensiva en programación, desarrollo web, bases de datos y trabajo en equipo.</p>
+            <div class="timeline-tags">
+              <span class="tag">🏅 Título Oficial</span>
+              <span class="tag">Cruz del Eje</span>
+              <span class="tag">Córdoba</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2026</div>
+          <div class="timeline-card">
+            <span class="timeline-badge">🎓 Universidad</span>
+            <h3 class="timeline-title">Ingreso a la UPC — Programación Full Stack</h3>
+            <p class="timeline-desc">Inicio de la Tecnicatura Universitaria en Programación Full Stack en la Universidad Provincial de Córdoba. Profundización en HTML5, CSS3, JavaScript moderno y PostgreSQL, aplicando los conocimientos del secundario a un nivel universitario.</p>
+            <div class="timeline-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
               <span class="tag">PostgreSQL</span>
-              <span class="tag">SQL</span>
-              <span class="tag">Modelado ER</span>
             </div>
           </div>
         </div>
@@ -422,12 +575,18 @@
           <div class="timeline-card">
             <span class="timeline-badge">🌐 Portfolio</span>
             <h3 class="timeline-title">Portfolio Profesional</h3>
-            <p class="timeline-desc">Diseño y desarrollo de este portfolio personal. Publicado con GitHub Pages. Primer proyecto con animaciones avanzadas, diseño responsive y JavaScript moderno.</p>
+            <p class="timeline-desc">Diseño y desarrollo de este portfolio personal desde cero. Animaciones avanzadas, cubos 3D CSS, cursor personalizado, formulario de contacto funcional y diseño 100% responsive. Publicado con GitHub Pages.</p>
             <div class="timeline-tags">
               <span class="tag">HTML</span>
               <span class="tag">CSS</span>
               <span class="tag">JavaScript</span>
               <span class="tag">GitHub Pages</span>
+            </div>
+            <div class="timeline-repos">
+              <a href="https://github.com/benjamin-Teo1/Portafolio" target="_blank" class="repo-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11"><path d="M12 2A10 10 0 0 0 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21.5c0 .3.2.6.7.5A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
+                Ver repo
+              </a>
             </div>
           </div>
         </div>
@@ -438,7 +597,7 @@
           <div class="timeline-card timeline-card--future">
             <span class="timeline-badge">🚀 Próximo</span>
             <h3 class="timeline-title">React & Node.js</h3>
-            <p class="timeline-desc">Siguiente etapa: aprender React para frontend moderno y Node.js para backend. Objetivo: construir aplicaciones full stack completas e independientes.</p>
+            <p class="timeline-desc">Siguiente etapa: aprender React para frontend moderno y Node.js para backend. Objetivo: construir aplicaciones full stack completas y conseguir mi primera experiencia profesional en tecnología.</p>
             <div class="timeline-tags">
               <span class="tag">React</span>
               <span class="tag">Node.js</span>
@@ -674,7 +833,7 @@
         <!-- FORMULARIO con Formspree -->
         <div class="contact-form-wrap" data-reveal>
           <form id="contactForm" class="contact-form"
-                action="https://formspree.io/f/mrewzvbp"
+                action="https://formspree.io/f/TU_FORM_ID"
                 method="POST">
             <input type="hidden" name="_subject" value="Nuevo mensaje desde tu Portfolio 🚀">
             <input type="hidden" name="_replyto" id="replyto">
@@ -718,6 +877,11 @@
       <p class="footer-sub">Full Stack Developer in progress · Córdoba, Argentina</p>
     </div>
   </footer>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
   <script src="js/script.js"></script>
 </body>

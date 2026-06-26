@@ -1,5 +1,5 @@
 /* =============================================
-   BENJAMIN TEO ROJAS — PORTFOLIO
+   BENJAMIN TEO ROJAS — PORTAFOLIO
    script.js
    ============================================= */
 
@@ -38,17 +38,40 @@ function animateFollower() {
 }
 animateFollower();
 
-/* ---- NAVBAR SCROLL EFFECT ---- */
-const navbar = document.getElementById("navbar");
+/* ---- NAVBAR SCROLL EFFECT + PROGRESS + BACK TO TOP ---- */
+const navbar    = document.getElementById("navbar");
+const progress  = document.getElementById("readProgress");
+const backToTop = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
+  // Navbar
+  if (window.scrollY > 50) navbar.classList.add("scrolled");
+  else navbar.classList.remove("scrolled");
+
+  // Barra de progreso
+  if (progress) {
+    const scrollTop  = window.scrollY;
+    const docHeight  = document.documentElement.scrollHeight - window.innerHeight;
+    const pct        = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progress.style.width = pct + "%";
   }
+
+  // Botón volver arriba
+  if (backToTop) {
+    if (window.scrollY > 400) backToTop.classList.add("visible");
+    else backToTop.classList.remove("visible");
+  }
+
   updateActiveNav();
 });
+
+if (backToTop) {
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+
 
 /* ---- ACTIVE NAV LINK ON SCROLL ---- */
 function updateActiveNav() {
